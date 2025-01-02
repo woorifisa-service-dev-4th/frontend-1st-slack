@@ -1,0 +1,76 @@
+* {
+    box-sizing: border-box;
+    font-family: "SUIT Variable", sans-serif;
+  }
+html, body{
+    height: 100%;
+    width: 100%;
+}
+
+header{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 25px;
+    font-size: 18px;
+    font-weight: 400;
+    color: #F2F2F2;
+    background-color: #3A1140;
+    cursor: pointer;
+}
+
+section {
+    /* border:2px dashed blue; */
+    width: 100%;
+    height: 100%;
+    display:flex;
+    justify-content: center;
+}
+.search-box{
+    margin-left: 23%;
+    border-radius: 5px;
+    width: 50%;
+    background-color:rgba(115, 71, 119, 1);
+    display: flex;
+    align-items: center;
+}
+.tool-bar{
+    /* border:2px dashed blue;  */
+    width:5%;
+    height: 100%;
+    background-color: #3A1140;
+}
+.main{
+    border:2px dashed blue; 
+    width:95%;
+    height: 100%;
+    display:flex;
+    justify-content: center;
+    background-color: #3A1140;
+}
+.left-tab{
+    /* border:2px dashed blue;  */
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    width:20%;
+    height: 100%;
+    background-color: rgba(115, 71, 119, 1);
+}
+.middle-tab{
+    /* border:2px dashed blue;  */
+    width:50%;
+    height: 100%;
+    background-color: white;
+}
+.right-tab{
+    /* border:2px dashed blue;  */
+    width:30%;
+    height: 100%;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.05) -10px 0px 24px 10px,
+    rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+}
+
