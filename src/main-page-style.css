@@ -13,7 +13,7 @@ header{
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
+    justify-content: left;
     padding: 0px 25px;
     font-size: 18px;
     font-weight: 400;
@@ -29,13 +29,24 @@ section {
     display:flex;
     justify-content: center;
 }
+.left-of-search-box{
+    width: 23%;
+    display: flex;
+    justify-content: right;
+}
+
 .search-box{
-    margin-left: 23%;
     border-radius: 5px;
     width: 50%;
     background-color:rgba(115, 71, 119, 1);
     display: flex;
+    justify-content: space-between;
     align-items: center;
+}
+.right-of-search-box{
+    width: 37%;
+    display: flex;
+    justify-content: right;
 }
 .tool-bar{
     /* border:2px dashed blue;  */
