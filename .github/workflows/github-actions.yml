@@ -1,0 +1,55 @@
+name: Deploy # Workflow 이름
+
+# Workflow를 발동시킬 이벤트
+on: # main 브랜치에 push 되었을 때 Workflow가 동작
+  push:
+    branches:
+      - main 
+
+jobs: # Workflow가 수행할 작업 목록
+  build: # Workflow의 첫 번째 Job은 build
+    name: Build # Job 이름
+    runs-on: ubuntu-latest # Runner의 VM OS 종류 및 버전
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install dependencies
+        run: npm install
+        working-directory: ./sample-app
+
+      - name: Build project
+        run: npm run build
+        working-directory: ./sample-app
+
+      - name: Upload production-ready build files
+        uses: actions/upload-artifact@v4
+        with:
+          name: production-files
+          path: ./sample-app/dist
+
+  deploy: # Workflow의 두 번째 Job은 deploy
+    name: Deploy
+    needs: build # 현재 job(deploy)에 대한 의존성, build job이 선행되어야 deploy job이 수행될 수 있음
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/main' # deploy를 수행하기 위해 현재 브랜치가 main인지 확인
+    # github.ref란 Github Actions 내부에서 참조하기 위한 Context 변수
+
+    steps:
+      - name:  artifact # build job에서 Artifact에 업로드한 리소스(dist/)를 다운받음
+        uses: actions/download-artifact@v4
+        with:
+          name: production-files
+          path: ./dist
+
+      - name: Deploy to GitHub Pages # 빌드된 리소스를 기반으로 Github Pages에 배포
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist
