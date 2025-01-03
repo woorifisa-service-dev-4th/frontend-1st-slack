@@ -6,8 +6,8 @@
 ## 팀 소개
 |      신희원       |          여은동         |       유승한        |                                                                                            
 | :------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
-|   <img src="https://avatars.githubusercontent.com/u/104755384?v=4" width="170" alt="깃허브계정-프로필사진"> |            <img src="https://avatars.githubusercontent.com/u/122276414?v=4" width="170" alt="깃허브계정-프로필사진">   |                 <img src="https://avatars.githubusercontent.com/u/106146847?v=4" width="170" alt="깃허브계정-프로필사진">   |                 <img src="https://avatars.githubusercontent.com/u/50361496?v=4" width="170" alt="깃허브계정-프로필사진">  |
-|   [@candosh](https://github.com/candosh)   |    [@yueunfive](https://github.com/yueunfive)  | [@ryuseunghan](https://github.com/ryuseunghan)  |
+|   <img src="https://avatars.githubusercontent.com/u/104755384?v=4" width="170" alt="깃허브계정-프로필사진"> |            <img src="https://avatars.githubusercontent.com/u/122276414?v=4" width="170" alt="깃허브계정-프로필사진">   |                 <img src="https://avatars.githubusercontent.com/u/59414536?v=4" width="170" alt="깃허브계정-프로필사진">   |                 <img src="https://avatars.githubusercontent.com/u/50361496?v=4" width="170" alt="깃허브계정-프로필사진">  |
+|   [@glone0506](https://github.com/glone0506)   |    [@sillonjeu](https://github.com/sillonjeu)  | [@ryuseunghan](https://github.com/ryuseunghan)  |
 | Frontend | Frontend | Frontend |
 
 ## 실행방법
