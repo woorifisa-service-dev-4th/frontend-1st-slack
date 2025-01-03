@@ -1,0 +1,16 @@
+name: Deploy # Workflow 이름
+
+# Workflow를 발동시킬 이벤트
+on: # main 브랜치에 push 되었을 때 Workflow가 동작
+  push:
+    branches:
+      - main 
+
+jobs: # Workflow가 수행할 작업 목록
+  build: # Workflow의 첫 번째 Job은 build
+    name: Build # Job 이름
+    runs-on: ubuntu-latest # Runner의 VM OS 종류 및 버전
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
