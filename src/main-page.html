@@ -7,15 +7,23 @@
     <title>Slack</title>
     <link rel ="stylesheet" href="main-page-style.css">
     <link rel ="stylesheet" href="middle-tab-style.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" />
 </head>
 <body>
     <header>
-        <!-- 승한 -->
+        <div class ="left-of-search-box">
+            <i class="fas fa-arrow-left" style="margin-right: 5%;"></i>
+            <i class="fas fa-arrow-right" style="margin-right: 5%;"></i>
+            <i class="fas fa-clock" style="margin-right: 5%;"></i>
+        </div>
         <div class = "search-box">
             <span>우리 FISA 4기 검색</span>
+            <i class="fas fa-search" style="margin-right: 2%;"></i> <!-- 검색 -->
         </div>
-        
+        <div class="right-of-search-box">
+            <i class="fas fa-question-circle"></i>
+        </div>
     </header>
     <section>
         <div class = "tool-bar">
@@ -165,17 +173,56 @@
                             <i class="fas fa-share"></i>
                         </div>
                     </div>
-                </div>
+              </div>
             </div>
             <div class = "right-tab">
-                
-                asdf
+                <div class = "profile-header">
+                    <span style="font-weight: 600; margin-left: 5%;"> 프로필 </span>
+                    <span style="margin-right: 5%;"> ⨉ </span>
+                </div>
+                <div class = "profile-img">
+                    <img src="https://pimg.mk.co.kr/meet/neds/2021/03/image_readtop_2021_291080_16167514554588643.jpg">
+                </div>
+                <div class = "profile-detail">
+                    <span style="font-weight: 600; font-size: 24px;"> 서비스_IU </span>
+               </div>
+                <div class = "profile-detail">
+                    <div class = "profile-online">
+                        <span style="width: 1em; color: green;margin:0;"> ● </span>
+                        <span style="width: 4em; margin-left: 10%;"> 온라인 </span>
+                    </div>
+                </div>
+                <div class = "profile-detail">
+                    <span><i class="fas fa-clock" style="margin-right: 2%;"></i>현지 시간 오전 11:29</span>
+                </div>
+                <div class = "profile-detail" style="padding-bottom: 5%; border-bottom: 1px solid #cacaca;">
+                    <button style="width: 30%;">
+                        <i class="fas fa-comments"> 메시지</i>
+                    </button>
+                    <button style="width: 30%;">
+                        <i class="fas fa-headphones"> 허들</i>
+                    </button>
+                    <button style="width: 20%;">
+                        <i class="fas fa-user"> VIP</i>
+                    </button>
+                    <button style="width: 10%; margin-right: 3%;">
+                        <i class="fas fa-ellipsis-v"></i>
+                    </button>
+                </div>
+                <div class = "profile-detail">
+                    <span style="font-weight: 600">연락처 정보</span>
+                </div>
+                <div class = "profile-email">
+                    <i class="fas fa-envelope"></i> 
+                    <div style="margin-left: 5%;">
+                        <span style="color: rgba(29, 28, 29, 0.7); font-weight: 600;">
+                            이메일 주소<br>
+                        </span>
+                        <a href="https://www.wooribank.com/">iu@woori.com</a>
+                    </div>
+                </div>
             </div>
         </div>
-        
-
     </section>
-
-
 </body>
 </html>
