@@ -3,20 +3,16 @@
 ## 서비스 소개
 이 프로젝트는 Slack의 기능을 클론하여 제공하는 서비스입니다. 팀 커뮤니케이션을 위한 다양한 기능을 제공하며, 사용자가 채널을 생성하고 다이렉트 메시지를 주고받을 수 있는 플랫폼을 구현했습니다.(HTML, CSS 구현 완료)
 
-## 이용 방법
-1. **로컬 환경에서 실행:**
-   - 필요한 종속성 설치:
-     ```bash
-     npm install
-     ```
-   - 로컬 서버 실행:
-     ```bash
-     npm start
-     ```
+## 팀 소개
+|      신희원       |          여은동         |       유승한        |                                                                                            
+| :------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
+|   <img src="https://avatars.githubusercontent.com/u/104755384?v=4" width="170" alt="깃허브계정-프로필사진"> |            <img src="https://avatars.githubusercontent.com/u/122276414?v=4" width="170" alt="깃허브계정-프로필사진">   |                 <img src="https://avatars.githubusercontent.com/u/106146847?v=4" width="170" alt="깃허브계정-프로필사진">   |                 <img src="https://avatars.githubusercontent.com/u/50361496?v=4" width="170" alt="깃허브계정-프로필사진">  |
+|   [@candosh](https://github.com/candosh)   |    [@yueunfive](https://github.com/yueunfive)  | [@ryuseunghan](https://github.com/ryuseunghan)  |
+| Frontend | Frontend | Frontend |
 
-2. **배포된 웹사이트 이용:**
-   - 배포된 서비스는 아래 링크에서 확인할 수 있습니다.
-     [웹사이트 주소]([https://woorifisa-service-dev-4th.github.io/frontend-1st-slack/](https://woorifisa-service-dev-4th.github.io/frontend-1st-slack/src/main-page.html))
+## 실행방법
+- 배포된 서비스는 아래 링크에서 확인할 수 있습니다.
+  [웹사이트 주소]([https://woorifisa-service-dev-4th.github.io/frontend-1st-slack/](https://woorifisa-service-dev-4th.github.io/frontend-1st-slack/src/main-page.html))
 
 ## UI 스타일 가이드라인
 
