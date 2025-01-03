@@ -1,13 +1,24 @@
-* {
-    box-sizing: border-box;
-    font-family: "SUIT Variable", sans-serif;
-  }
-html, body{
-    height: 100%;
-    width: 100%;
+@font-face {
+    font-family: 'Slack-font';
+    src: url('../font/Moneygraphy-Rounded.ttf') format('woff2');
+    /* 이런식으로 weight를 지정해서 사용할 수도 있다!*/
+    font-weight: 400;
 }
 
-header{
+/* * {
+    box-sizing: border-box;
+    font-family: "Slack-font", sans-serif;
+} */
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+header {
     width: 100%;
     height: 50px;
     display: flex;
@@ -26,51 +37,55 @@ section {
     /* border:2px dashed blue; */
     width: 100%;
     height: 100%;
-    display:flex;
+    display: flex;
     justify-content: center;
 }
-.search-box{
+
+.search-box {
     margin-left: 23%;
     border-radius: 5px;
     width: 50%;
-    background-color:rgba(115, 71, 119, 1);
+    background-color: rgba(115, 71, 119, 1);
     display: flex;
     align-items: center;
 }
-.tool-bar{
+
+.tool-bar {
     /* border:2px dashed blue;  */
-    width:5%;
+    width: 5%;
     height: 100%;
     background-color: #3A1140;
 }
-.main{
-    border:2px dashed blue; 
-    width:95%;
+
+.main {
+    width: 95%;
     height: 100%;
-    display:flex;
+    display: flex;
     justify-content: center;
     background-color: #3A1140;
 }
-.left-tab{
+
+.left-tab {
     /* border:2px dashed blue;  */
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
-    width:20%;
+    width: 25%;
     height: 100%;
     background-color: rgba(115, 71, 119, 1);
 }
-.middle-tab{
+
+.middle-tab {
     /* border:2px dashed blue;  */
-    width:50%;
+    width: 45%;
     height: 100%;
     background-color: white;
 }
-.right-tab{
+
+.right-tab {
     /* border:2px dashed blue;  */
-    width:30%;
+    width: 30%;
     height: 100%;
     background-color: white;
     box-shadow: rgba(0, 0, 0, 0.05) -10px 0px 24px 10px,
-    rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+        rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
 }
-

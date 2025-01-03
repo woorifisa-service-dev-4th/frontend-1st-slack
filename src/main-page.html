@@ -5,37 +5,151 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Slack</title>
-    <link rel ="stylesheet" href="main-page-style.css">
+    <link rel="stylesheet" href="main-page-style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" />
+    <link rel="stylesheet" href="select-tab.css">
 </head>
+
 <body>
     <header>
         <!-- 승한 -->
-        <div class = "search-box">
+        <div class="search-box">
             <span>우리 FISA 4기 검색</span>
         </div>
-        
+
     </header>
     <section>
-        <div class = "tool-bar">
-                    
+        <div class="tool-bar">
+            <a href="">
+                <i class="fas fa-home"></i> <!-- 홈 -->
+                <span class="tool-bar-span">홈</span>
+            </a>
+            <a href="">
+                <i class="fas fa-comments"></i> <!-- DM -->
+                <span class="tool-bar-span">DM</span>
+            </a>
+            <a href="">
+                <i class="fas fa-bell"></i> <!-- 내 활동 -->
+                <span class="tool-bar-span">내 활동</span>
+            </a>
+            <a href="">
+                <i class="fas fa-ellipsis-h"></i> <!-- 더 보기 -->
+                <span class="tool-bar-span">더 보기</span>
+            </a>
+            <a href="">
+                <i class="fas fa-plus"></i> <!-- 플러스 -->
+            </a>
         </div>
-        <div class = "main">
-            <div class = "left-tab">
-                
+        <div class="main">
+            <div class="left-tab">
+                <div class="leftTab-upline">
+                    <select class="leftTab-select">
+                        <option value="1">우리FISA 1기</option>
+                        <option value="2">우리FISA 2기</option>
+                        <option value="3">우리FISA 3기</option>
+                        <option value="4">우리FISA 4기</option>
+                    </select>
+                    <div class="leftTab-upline-right">
+                        <a href="">
+                            <i class="fas fa-filter"></i> <!-- 대화 필터링 -->
+                        </a>
+                        <a href="">
+                            <i class="fas fa-edit"></i> <!-- 새 메세지 -->
+                        </a>
+                    </div>
+                </div>
+                <hr style="border: none; border-top: 0.1px solid rgb(83, 47, 85); margin:0;">
+                <!-- 구분선 -->
+                <a class="hurdle" href="">
+                    <i class="fas fa-headphones"></i> <!-- 허들 -->
+                    <span>허들</span>
+                </a>
+                <div class="channel">
+                    <div class="channel-title">
+                        <i class="fas fa-angle-down"></i>
+                        <button class="channel-button">채널
+                            <span class="triangle"></span> <!-- 삼각형 아이콘 -->
+                        </button>
+                    </div>
+                    <div class="channel-list">
+                        <a href="">
+                            <i class="fas fa-hashtag"></i> <!-- 해쉬 -->
+                            <span>01_공지사항</span>
+                        </a>
+                        <a href="">
+                            <i class="fas fa-hashtag"></i> <!-- 해쉬 -->
+                            <span>02_사전학습</span>
+                        </a>
+                        <a href="">
+                            <i class="fas fa-hashtag"></i> <!-- 해쉬 -->
+                            <span>03_학습일지_챌린지</span>
+                        </a>
+                        <a href="">
+                            <i class="fas fa-hashtag"></i> <!-- 해쉬 -->
+                            <span>04_스터디_그룹</span>
+                        </a>
+                        <a href="">
+                            <i class="fas fa-hashtag"></i> <!-- 해쉬 -->
+                            <span>05_자유게시판</span>
+                        </a>
+                        <a href="">
+                            <i class="fas fa-lock"></i> <!-- 잠금 -->
+                            <span>c3_00_클라우드_서비스_개발_과정</span>
+                        </a>
+                        <a href="">
+                            <i class="fas fa-lock"></i> <!-- 잠금 -->
+                            <span>c3_01_강사_공지사항</span>
+                        </a>
+                        <a href="">
+                            <i class="fas fa-lock"></i> <!-- 잠금 -->
+                            <span>c3_02_강사_수업자료공유</span>
+                        </a>
+                        <a href="">
+                            <i class="fas fa-lock"></i> <!-- 잠금 -->
+                            <span>c3_03_자유게시판</span>
+                        </a>
+
+                        <a href="">
+                            <i class="fas fa-plus"></i> <!-- 채널 추가 -->
+                            <span>채널 추가</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="messeage">
+                    <div class="messeage-title">
+                        <i class="fas fa-angle-down"></i>
+                        <button class="messeage-button">다이렉트 메시지
+                            <span class="triangle"></span> <!-- 삼각형 아이콘 -->
+                        </button>
+                    </div>
+                    <div class="messeage-list">
+                        <a href="">
+                            <i class="fas fa-comment"></i>
+                            <span>서비스_서채연,서비스_신희원,서비스_여은동</span>
+                        </a>
+
+                        <a href="">
+                            <i class="fas fa-plus"></i> <!-- 채널 추가 -->
+                            <span>사용자 초대</span>
+                        </a>
+                    </div>
+                </div>
+
             </div>
-            <div class = "middle-tab">
+            <div class="middle-tab">
                 <!-- 승한 -->
                 asdf
             </div>
-            <div class = "right-tab">
+            <div class="right-tab">
                 <!-- 승한 -->
                 asdf
             </div>
         </div>
-        
+
 
     </section>
 
 
 </body>
+
 </html>
