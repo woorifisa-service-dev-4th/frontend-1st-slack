@@ -3,7 +3,6 @@
     display: flex;
     flex-direction: column; /* 세로로 정렬 */
     height: 100%;
-    width: 100%;
 }
 
 /* middle-top 스타일 */
@@ -67,8 +66,8 @@
 }
 
 .middle-notice-profile img {
-    width: 80px;
-    height: 80px;
+    width: 60px;
+    height: 60px;
     border-radius: 20%;
     object-fit: cover;
 }
@@ -191,6 +190,7 @@
     padding: 15px;
     background-color: transparent; /* 배경 투명 */
     font-size: 16px;
+    /* padding:25px; */
 }
 
 .middle-message-top {
