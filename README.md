@@ -12,7 +12,7 @@
 
 ## 실행방법
 - 배포된 서비스는 아래 링크에서 확인할 수 있습니다.
-- [웹사이트 주소]([https://woorifisa-service-dev-4th.github.io/frontend-1st-slack/](https://woorifisa-service-dev-4th.github.io/frontend-1st-slack/src/main-page.html))
+[웹사이트 주소](https://woorifisa-service-dev-4th.github.io/frontend-1st-slack/src/main-page.html)
 
 ## UI 스타일 가이드라인
 
