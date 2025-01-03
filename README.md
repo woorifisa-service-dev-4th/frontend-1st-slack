@@ -15,7 +15,7 @@
 ## 데모 링크/ 시연 영상
 - [데모 링크](https://woorifisa-service-dev-4th.github.io/frontend-1st-slack/src/main-page.html)
 - 시연 영상
-![Uploading Slack - Chrome 2025-01-03 17-32-20 (1).gif…]()
+![Slack - Chrome 2025-01-03 17-32-20 (1)](https://github.com/user-attachments/assets/702193e6-ebfa-4555-a04d-4a693ec30e71)
 
 ## UI 스타일 가이드라인
 
