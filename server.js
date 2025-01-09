@@ -10,7 +10,7 @@ app.use(json());
 
 // lh:3-/로 접속 시 응답할 핸들러(엔드포인트)
 app.get("/", (_, response) => {
-	response.sendFile("main-page.html");
+	response.sendFile("index.html");
 });
 
 app.listen(port, () =>
@@ -37,3 +37,4 @@ app.post('/openai', async (req,res) =>  {
 });
 	res.send(completion.choices[0]);
 })
+
