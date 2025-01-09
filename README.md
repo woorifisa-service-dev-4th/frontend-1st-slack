@@ -4,7 +4,7 @@
 
 ## 서비스 소개
 
-이 프로젝트는 Slack의 클론 프로젝트입니다. 팀 커뮤니케이션을 위한 다양한 기능을 제공하며, 사용자가 채널을 생성하고 다이렉트 메시지를 주고받을 수 있는 플랫폼을 구현했습니다.(HTML, CSS 구현 완료)
+이 프로젝트는 Slack의 클론 프로젝트입니다. 우리은행 모델인 아이유에게 응원의 메시지를 받을 수 있는 플랫폼을 구현했습니다.
 ![image](https://github.com/user-attachments/assets/842b4b4b-f2a1-47c8-a6f8-db6640cf6113)
 
 ## 팀 소개
@@ -20,6 +20,8 @@
 - [데모 링크](https://woorifisa-service-dev-4th.github.io/frontend-1st-slack/src/main-page.html)
 - 시연 영상
   ![Slack - Chrome 2025-01-03 17-32-20 (1)](https://github.com/user-attachments/assets/702193e6-ebfa-4555-a04d-4a693ec30e71)
+  ![Slack - Chrome 2025-01-09 18-41-48](https://github.com/user-attachments/assets/43d3df5c-2ea2-44bb-bf99-2884204ec7be)
+
 
 ## UI 스타일 가이드라인
 
@@ -54,11 +56,7 @@
 
 ## 기능 설명
 
-- **채널 생성 및 관리**: 사용자는 다양한 채널을 생성하고 참여할 수 있습니다. (미구현)
-- **다이렉트 메시지(DM)**: 팀원들과 개인적인 메시지를 주고받을 수 있습니다. (미구현)
-- **알림**: 새 메시지나 활동에 대한 알림을 실시간으로 제공합니다. (미구현)
-- **검색**: 팀 내 모든 채팅 내용을 검색할 수 있습니다. (미구현)
-- **현재 정적페이지만 구현되었습니다. 추후 기능 및 JS구현 예정입니다.**
+- ChatGPT API를 연동하여 댓글을 남길 시 IU의 응원을 받을 수 있습니다!
 
 ## Lighthouse 성능 지표
 
