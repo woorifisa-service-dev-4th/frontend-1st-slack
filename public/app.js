@@ -1,14 +1,12 @@
+import { generateText } from "./api.js";
+
 const sendButton = document.querySelector(".fas.fa-share");
 const [textarea] = document.getElementsByTagName("textarea");
 const middleBottom = document.querySelector(".middle-bottom"); // 메시지 목록을 추가할 부모 컨테이너
 const middleSpace = document.querySelector(".middle-space");
 
-const amimalArray =  ["너구리", "코끼리", "여우", "팽귄", ];
-let inputvlaue
 
 sendButton.addEventListener("click", sendMessage);
-
-sendButton.addEventListener("")
 
 textarea.addEventListener("keydown", (event)=>{
     if(event.key == "Enter" && !event.shiftKey){
@@ -17,7 +15,8 @@ textarea.addEventListener("keydown", (event)=>{
     }
 });
 
-function sendMessage() {
+async function sendMessage() {
+    console.log("start");
     const inputValue = textarea.value.trim(); 
     if(inputValue){
         // 새로운 메시지 생성
@@ -27,7 +26,7 @@ function sendMessage() {
         newMessage.innerHTML = `
                     <div class="middle-bottom-chatting1-icon">
                         <img
-                            src="https://www.woorifg.com/files/upload/2022/4/202204250255341130.jpg"
+                            src="annonymous.png"
                             alt="Woori FG Logo"
                         />
                     </div>
@@ -49,20 +48,54 @@ function sendMessage() {
                 `;
 
                 middleBottom.appendChild(newMessage);
+
+                // 스크롤을 맨 아래로 이동
+                scrollToBottom();
+
                 
+                // ChatGPT 응원 메시지 생성
+                const aiResponse = await generateText(inputValue);
+
+                // AI 응원 메시지 추가
+                const aiMessage = document.createElement("div");
+                aiMessage.classList.add("middle-bottom-chatting1");
+                aiMessage.innerHTML = `
+                    <div class="middle-bottom-chatting1-icon">
+                        <img
+                            src="https://www.woorifg.com/files/upload/2022/4/202204250255341130.jpg"
+                            alt="Woori FG Logo"
+                        />
+                    </div>
+                    <div class="middle-bottom-chatting1-inputbox">
+                        <div class="middle-bottom-chatting1-information">
+                            <div class="middle-bottom-chatting1-information-user">
+                                IU
+                            </div>
+                            <div class="middle-bottom-chatting1-information-time">
+                                ${getCurrentTime()}
+                            </div>
+                        </div>
+                        <div>
+                            <div class="middle-bottom-chatting1-chattingbox">
+                                ${aiResponse}
+                            </div>
+                        </div>
+                    </div>
+                `;
+                middleBottom.appendChild(aiMessage);
+
+
                 // 스크롤을 맨 아래로 이동
                 scrollToBottom();
 
                 textarea.value="";
+        
     } else{
         console.warn("메시지를 입력하세요.");
     }
 
 }
 
-function randomAnimal(){
-
-}
 
 function getCurrentTime() {
     const now = new Date();
