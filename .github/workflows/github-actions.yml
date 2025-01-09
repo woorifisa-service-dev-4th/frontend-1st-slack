@@ -4,7 +4,7 @@ name: Deploy # Workflow 이름
 on: # main 브랜치에 push 되었을 때 Workflow가 동작
   push:
     branches:
-      - main 
+      - main
 
 jobs: # Workflow가 수행할 작업 목록
   build: # Workflow의 첫 번째 Job은 build

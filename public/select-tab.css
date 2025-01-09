@@ -1,0 +1,246 @@
+/* Select-tab CSS 적용 부분 시작 */
+
+/* toolBar */
+.tool-bar {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.tool-bar a {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-decoration: none;
+	/* 링크의 기본 밑줄을 제거 */
+	margin-top: 20px;
+	padding: 7px 14px;
+	border-radius: 15px;
+	/* 모서리 둥글게 */
+	transition: background-color 0.3s ease;
+	/* 배경색 변화에 부드러운 효과 추가 */
+}
+
+.tool-bar a:hover {
+	background-color: #542a59;
+}
+
+.tool-bar i {
+	font-size: 24px;
+	color: white;
+	margin-bottom: 5px;
+}
+
+.tool-bar-span {
+	color: white;
+	font-size: 12px;
+}
+
+.leftTab-select {
+	background-color: rgba(115, 71, 119, 1);
+	color: white;
+	/* 글자색을 하얀색으로 설정 */
+	border: none;
+	/* 테두리 없앰 */
+	padding: 10px 15px;
+	/* 내부 여백 */
+	font-size: 14px;
+	/* 글씨 크기 */
+	border-radius: 8px;
+	/* 모서리 둥글게 */
+
+	padding: 10px;
+	margin: 10px;
+	font-size: 20px;
+}
+
+.leftTab-select:hover {
+	background-color: rgb(133, 80, 137);
+}
+
+.leftTab-select:focus {
+	outline: none;
+}
+
+/* leftTab */
+.leftTab-upline {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.leftTab-upline a {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-decoration: none;
+	/* 링크의 기본 밑줄을 제거 */
+	padding: 10px 10px;
+	margin-top: 0;
+	border-radius: 15px;
+	/* 모서리 둥글게 */
+	transition: background-color 0.3s ease;
+	/* 배경색 변화에 부드러운 효과 추가 */
+}
+
+.leftTab-upline i {
+	font-size: 16px;
+	color: white;
+}
+
+.leftTab-upline a:hover {
+	background-color: rgb(133, 80, 137);
+}
+
+.leftTab-upline-right {
+	display: flex;
+	justify-content: flex-end;
+	gap: 10px;
+	margin-right: 10px;
+}
+
+.hurdle {
+	display: inline;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	text-decoration: none;
+	/* 링크의 기본 밑줄을 제거 */
+	margin: 10px;
+	padding: 10px 10px;
+	font-size: 16px;
+	color: white;
+	gap: 10px;
+	border-radius: 15px;
+	/* 모서리 둥글게 */
+	transition: background-color 0.3s ease;
+	/* 배경색 변화에 부드러운 효과 추가 */
+}
+
+.hurdle:hover {
+	background-color: rgb(133, 80, 137);
+}
+
+.channel-title {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: flex-start;
+	gap: 10px;
+	margin-left: 25px;
+}
+
+.channel-button {
+	position: relative;
+	padding: 10px 20px;
+	font-size: 16px;
+	background-color: rgba(115, 71, 119, 1);
+	color: white;
+	border: none;
+	border-radius: 5px;
+}
+
+.channel-button:hover {
+	background-color: rgb(133, 80, 137);
+}
+
+.triangle {
+	display: none;
+	/* 기본적으로 숨김 */
+	width: 0;
+	height: 0;
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+	border-top: 5px solid white;
+	position: absolute;
+	top: 50%;
+	right: 4px;
+	/* 오른쪽에 위치하도록 */
+	transform: translateY(-50%);
+}
+
+.channel-button:hover .triangle {
+	display: block;
+	/* 호버 시 삼각형을 표시 */
+}
+
+.channel-list {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	gap: 5px;
+	margin: 20px;
+	margin-top: 0px;
+}
+
+.channel-list a {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap: 10px;
+	text-decoration: none;
+	color: white;
+	font-size: 16px;
+	border-radius: 15px;
+	/* 모서리 둥글게 */
+	transition: background-color 0.3s ease;
+	padding: 5px;
+}
+
+.channel-list a:hover {
+	background-color: rgb(133, 80, 137);
+}
+
+.messeage-title {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: flex-start;
+	gap: 10px;
+	margin-left: 25px;
+}
+
+.messeage-button {
+	position: relative;
+	padding: 10px 20px;
+	font-size: 16px;
+	background-color: rgba(115, 71, 119, 1);
+	color: white;
+	border: none;
+	border-radius: 5px;
+}
+
+.messeage-button:hover .triangle {
+	display: block;
+	/* 호버 시 삼각형을 표시 */
+}
+
+.messeage-list {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	gap: 5px;
+	margin: 20px;
+	margin-top: 0px;
+}
+
+.messeage-list a {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap: 10px;
+	text-decoration: none;
+	color: white;
+	font-size: 16px;
+	border-radius: 15px;
+	/* 모서리 둥글게 */
+	transition: background-color 0.3s ease;
+	padding: 5px;
+}
+
+.messeage-list a:hover {
+	background-color: rgb(133, 80, 137);
+}
+
+/* Select-tab CSS 적용 부분 끝 */

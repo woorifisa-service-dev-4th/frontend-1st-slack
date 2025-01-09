@@ -1,0 +1,163 @@
+@font-face {
+	font-family: "Slack-font";
+	src: url("../font/Moneygraphy-Rounded.ttf") format("woff2");
+	/* 이런식으로 weight를 지정해서 사용할 수도 있다!*/
+	font-weight: 400;
+}
+
+/* * {
+    box-sizing: border-box;
+    font-family: "Slack-font", sans-serif;
+} */
+
+html,
+body {
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+header {
+	width: 100%;
+	height: 40px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: left;
+	padding: 0px 25px;
+	font-size: 18px;
+	font-weight: 400;
+	color: #f2f2f2;
+	background-color: #3a1140;
+	cursor: pointer;
+	padding: 0;
+}
+section {
+	/* border:2px dashed blue; */
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+.left-of-search-box {
+	width: 28.75%;
+	display: flex;
+	justify-content: right;
+}
+
+.search-box {
+	border-radius: 5px;
+	width: 50%;
+	background-color: rgba(115, 71, 119, 1);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.right-of-search-box {
+	width: 21.25%;
+	display: flex;
+	justify-content: right;
+}
+.tool-bar {
+	/* border:2px dashed blue;  */
+	width: 5%;
+	height: 100%;
+	background-color: #3a1140;
+}
+
+.main {
+	/* border:2px dashed blue;  */
+	width: 95%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	background-color: #3a1140;
+}
+
+.left-tab {
+	/* border:2px dashed blue;  */
+	border-top-left-radius: 20px;
+	border-bottom-left-radius: 20px;
+
+	width: 25%;
+	height: 100%;
+	background-color: rgba(115, 71, 119, 1);
+}
+
+.middle-tab {
+	/* border:2px dashed blue;  */
+	width: 50%;
+	height: 100%;
+	background-color: white;
+}
+
+.right-tab {
+	/* border:2px dashed blue;  */
+
+	width: 25%;
+	height: 100%;
+	background-color: white;
+	box-shadow:
+		rgba(0, 0, 0, 0.05) -10px 0px 24px 10px,
+		rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+}
+.profile-header {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 3%;
+}
+.profile-header span {
+	font-size: 18px;
+}
+.profile-img {
+	margin-top: 10%;
+	display: flex;
+	justify-content: center;
+}
+.profile-img img {
+	height: 70%;
+	width: 70%;
+	border-radius: 5%;
+}
+.profile-detail {
+	display: flex;
+	justify-content: left;
+	margin-top: 5%;
+	width: 100%;
+}
+.profile-detail span {
+	margin-left: 5%;
+	width: 100%;
+}
+.profile-online {
+	display: flex;
+	justify-content: left;
+	height: 1em;
+	margin-left: 5%;
+}
+.profile-detail button {
+	margin-left: 3%;
+	width: 100%;
+	height: 30px;
+	cursor: pointer;
+	border-radius: 10px;
+
+	border: 1px solid #cacaca;
+	background-color: white;
+}
+.profile-email {
+	display: flex;
+	justify-items: flex-start;
+	margin-top: 10px;
+}
+.profile-email i {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-left: 5%;
+	border-radius: 5px;
+	/* background-color: rgba(29, 28, 29, 0.04); */
+	font-size: 20px;
+}
