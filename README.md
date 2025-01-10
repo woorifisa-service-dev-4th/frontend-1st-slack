@@ -13,7 +13,7 @@
 | :-------------------------------------------------------------------------------------------------------: | :------------------------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------------------: |
 | <img src="https://avatars.githubusercontent.com/u/104755384?v=4" width="170" alt="깃허브계정-프로필사진"> | <img src="https://avatars.githubusercontent.com/u/59414536?v=4" width="170" alt="깃허브계정-프로필사진"> | <img src="https://avatars.githubusercontent.com/u/106146847?v=4" width="170" alt="깃허브계정-프로필사진"> |
 |                                [@glone0506](https://github.com/glone0506)                                 |                                [@sillonjeu](https://github.com/sillonjeu)                                |                              [@ryuseunghan](https://github.com/ryuseunghan)                               |
-|                                                 Frontend                                                  |                                                 Frontend                                                 |                                                 Frontend                                                  |
+|                                                 Frontend                                                  |                                                 Frontend                                                 |                                                 Frontend, Backend                                                  |
 
 ## 데모 링크/ 시연 영상
 
